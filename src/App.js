@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+function buttonClick(){
+  console.log("Button is Clicked!")
+  alert("Button is Clicked!")
+}
+
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div>
+        <h1> Welcome to React Event Handling </h1>
+        <br></br>
+        <button onClick={buttonClick}>Click me!</button>
+      </div>
+
     </div>
   );
 }
